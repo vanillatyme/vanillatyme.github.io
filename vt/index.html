@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../img/32x32HubLogo.png">
   <link rel="stylesheet" href="https://use.typekit.net/uid2ifh.css">
+  <script src="https://kit.fontawesome.com/9469d216a0.js" crossorigin="anonymous"></script>
   <title>Vanilla Tyme Map</title>
 </head>
 <body>
@@ -15,6 +16,28 @@
       <span class="primary">Vanilla Tyme</span><span class="secondary">!</span><span class="extra"> Live Map</span>
     </div>
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
   <iframe src="http://play.vanillatyme.com:4958" ></iframe>
 </body>
 </html>
+<script type="text/javascript">
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  mybutton.style.display = "block";
+} else {
+  mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
