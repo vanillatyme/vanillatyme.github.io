@@ -1,0 +1,26 @@
+iframe {
+    border: none;
+    position: absolute;
+    height: calc(100vh - 76px);
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+.home {
+    background-image: url(https://i.imgur.com/fdgyFDg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome {
+    margin-top: 100px;
+}
+@media only screen and (max-width: 500px){
+    .welcome img {
+        height: 100px !important;
+    }
+}
