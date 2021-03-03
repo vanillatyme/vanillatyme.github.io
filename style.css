@@ -10,6 +10,7 @@ iframe {
     background-image: url(https://i.imgur.com/fdgyFDg.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 .center {
     display: flex;
